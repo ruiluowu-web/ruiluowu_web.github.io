@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+            min-height: 100vh;
+            color: #fff;
+            padding: 40px 20px;
+        }
+        .container { max-width: 900px; margin: 0 auto; }
+        header {
+            text-align: center;
+            margin-bottom: 60px;
+        }
+        h1 { font-size: 2.5rem; margin-bottom: 10px; }
+        .subtitle { color: #7f8c8d; font-size: 1.1rem; }
+        .projects {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 24px;
+        }
+        .project-card {
+            background: rgba(255,255,255,0.05);
+            border-radius: 16px;
+            padding: 24px;
+            transition: transform 0.3s, box-shadow 0.3s;
+            text-decoration: none;
+            color: inherit;
+            display: block;
+        }
+        .project-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 40px rgba(0,0,0,0.3);
+        }
+        .project-card h3 {
+            font-size: 1.4rem;
+            margin-bottom: 8px;
+            color: #3498db;
+        }
+        .project-card p {
+            color: #bdc3c7;
+            font-size: 0.95rem;
+            line-height: 1.6;
+        }
+        .project-card .lang {
+            display: inline-block;
+            margin-top: 12px;
+            padding: 4px 12px;
+            background: rgba(52, 152, 219, 0.2);
+            border-radius: 20px;
+            font-size: 0.85rem;
+            color: #3498db;
+        }
+        .project-card .link-icon {
+            float: right;
+            font-size: 1.2rem;
+        }
+        .homepage-link {
+            color: #e74c3c;
+            font-size: 0.9rem;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>My Projects</h1>
+            <p class="subtitle">Welcome to my GitHub portfolio</p>
+        </header>
+        
+        <div class="projects">
+            <a href="https://github.com/ruiluowu-web/ScheduleTool" class="project-card" target="_blank">
+                <span class="link-icon">↗</span>
+                <h3>ScheduleTool</h3>
+                <p>A scheduling tool built with JavaScript.</p>
+                <span class="lang">JavaScript</span>
+            </a>
+            
+            <a href="https://github.com/ruiluowu-web/SciRadar" class="project-card" target="_blank">
+                <span class="link-icon">↗</span>
+                <h3>SciRadar</h3>
+                <p>A scientific radar platform for data visualization and analysis.</p>
+                <span class="lang">JavaScript</span>
+                <div class="homepage-link">🌐 Live: https://sci-radar.vercel.app</div>
+            </a>
+            
+            <a href="https://github.com/ruiluowu-web/ruiluowu_web.github.io" class="project-card" target="_blank">
+                <span class="link-icon">↗</span>
+                <h3>ruiluowu_web.github.io</h3>
+                <p>GitHub Pages template for personal portfolio websites.</p>
+                <span class="lang">HTML/Markdown</span>
+            </a>
+        </div>
+    </div>
+</body>
+</html>
